@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my secret card</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <style>
+            /* You can put any styles here */
+            body {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: darkblue;
+                
+            }
+            section {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .card {
+                width: 450px;
+				height: 300px;
+				background: chartreuse;
+                color: darkviolet;
+				text-align: right;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 10px 10px darkviolet;
+                position: relative;
+            }
+            .line {
+                background: darkviolet;
+                height:100%;
+                width: 3px;
+                position: absolute;
+                left: 65px;
+            }
+            .content {
+                text-align: left;
+                color: darkviolet;
+                position: absolute;
+                font-size: 2.2pc;
+                padding-right: 35%;
+                padding-left: 20%; 
+            }
+            img {
+            width: 30%;
+            position: absolute; /* Changed position to absolute */
+            right: 20px; /* Adjusted right positioning */
+            top: 50%; /* Centered vertically */
+            transform: translateY(-50%); /* Centered vertically */
+        }
+        a {
+            text-decoration: none;
+        }
+        </style>
+    </head>
+    <body>
+        <section>
+            <a href = "card.html">
+                <div class = "card">
+                        <br>
+                        <div class = "line"></div>
+                        <p class = "content">
+                            My name is Mary Ma and I feel not so great today
+                        </p>
+                        <img src="raf_360x360_075_t_fafafa_ca443f4786-removebg-preview.png" alt="sad face clip art">
+            </div>
+            </a> 
+        </section>
+    </body>
+    </html>
