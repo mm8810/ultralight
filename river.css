@@ -1,0 +1,58 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+p {
+    position:relative;
+    z-index: 5;
+    font-size: 100px;
+    line-height: 1.6;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right; 
+}
+
+.middle {
+    text-align: center; 
+}
+.moyi, .mama, .wu, .lian {
+    width: 45%;
+    float: left;
+}
+.moer, .shaman, .xiao, .yiqi, .yan {
+    width:45%;
+    float: right;
+}
+.intro {
+    text-align: right;
+    width:50%;
+    display: table-cell;
+}
+.container {
+    position: relative;
+    z-index: 5;
+    display: flex;
+  }
+  
+  .column-right {
+    width: 50%;
+  }
+  .column-left {
+    width:50%;
+    font-size: 100px;
+  }
