@@ -1,0 +1,134 @@
+body {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#dialogue1 {
+    position: absolute;
+    top: 300px;
+    left: 10px;
+    font-style: italic;
+    color: red;
+    font-size: 70px;
+    opacity: 20%;
+}
+
+#dialogue2 {
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    font-style: italic;
+    color: red;
+    font-size: 90px;
+    opacity: 20%;
+}
+
+#dialogue3 {
+    position: absolute;
+    top: 600px;
+    right: 20px;
+    font-style: italic;
+    color: red;
+    font-size: 90px;
+    opacity: 20%; 
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    section h2 {
+        font-size: 1.8em;
+    }
+    section p {
+        font-size: 1em;
+    }
+}
+
+.image-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: palegoldenrod;
+    text-align: left;
+    width: 90%;
+    max-width: 600px;
+}
+
+.overlay-text p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.image-container.overlay-keyboard .overlay-text {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+}
+
+#heart {
+    font: size 500px;;
+    color:white;
+    text-decoration: none;
+}
+#heart:hover {
+    color:red;
+}

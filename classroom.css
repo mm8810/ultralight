@@ -1,0 +1,27 @@
+
+.alt-text {
+    display: none;
+}
+.quarters {
+    background-image: url("D83DB381-7FA3-4831-9E0A-9CA428F0A26F.JPG");
+    height: 50vh;
+    background-size: 100%;
+}
+@media screen and (max-width: 1000px) {
+    span {
+        text-decoration: line-through;
+        color:red;
+    }
+}
+@media screen and (max-width: 600px) {
+    span {
+        color:white;
+    }
+    .quarters {
+        background-image: none;
+        background-color: red;
+    }
+    .alt-text {
+        display: block;
+    }
+}
