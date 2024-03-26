@@ -10,10 +10,27 @@ div {
     align-items: center;
     height: 100vh; 
     text-align: center;
+    color: white;
 }
 
+body[data-status="morning"] div.morning {
+    color: crimson;
+  }
+
+body[data-status="night"] div.night {
+    color: darkred;
+  }
+
+body[data-status = "afternoon"] div.afternoon {
+    color: darkred;
+}
+
+body[data-status="evening"] div.evening {
+    color: brown;
+  }
+
 p {
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
     font-size: 18px; 
     line-height: 1.5; 
 }
