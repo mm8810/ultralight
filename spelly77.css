@@ -1,37 +1,48 @@
-
 body, html {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    text-align: center;
-    color: white;
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
-body[data-status="morning"] div.morning {
-    color: crimson;
+.image {
+  position: absolute;
+  cursor: pointer;
+}
+
+.image img {
+  width: 100%; /* Stretch the image to fill the width */
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+}
+
+#food {
+  left: 50%; /* Position image horizontally at 50% */
+  top: 50%; /* Position image vertically at 50% */
+  transform: translate(-50%, -50%); /* Center the image horizontally and vertically */
+}
+
+/* Responsive styles for different screen sizes */
+@media screen and (max-width: 768px) {
+  #food {
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the image horizontally and vertically */
   }
-
-body[data-status="night"] div.night {
-    color: darkred;
-  }
-
-body[data-status = "afternoon"] div.afternoon {
-    color: darkred;
 }
 
-body[data-status="evening"] div.evening {
-    color: brown;
-  }
 
-p {
-    font-family: Arial, sans-serif;
-    font-size: 18px; 
-    line-height: 1.5; 
-}
+
+
+
+
+
+
+
+
 
