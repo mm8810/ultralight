@@ -37,7 +37,7 @@ function handleImageClick(event) {
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #fff;
+            background-color: lightgoldenrodyellow;
             padding: 20px;
         }
 
@@ -96,7 +96,7 @@ function handleImageClick(event) {
   <style>
       body {
           font-family: Arial, sans-serif;
-          background-color: #fff;
+          background-color: lightskyblue;
           padding: 20px;
       }
 
