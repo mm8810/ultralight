@@ -7,32 +7,45 @@ body, html {
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden; /* Ensure images do not overflow outside container */
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .image {
-  position: absolute;
-  cursor: pointer;
+  display: block;
+  margin: 20px auto; /* Adjust margins to position images */
 }
 
 .image img {
-  width: 100%; /* Stretch the image to fill the width */
+  max-width: 100%;
   height: auto;
-  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+  display: block;
+  margin: 0 auto; /* Center images horizontally */
 }
 
-#food {
-  left: 50%; /* Position image horizontally at 50% */
-  top: 50%; /* Position image vertically at 50% */
-  transform: translate(-50%, -50%); /* Center the image horizontally and vertically */
-}
+
+#food1 {
+    width: 100%;
+    left: 50%;
+    top: 25%;
+  }
+  #food2 {
+    width: 100%;
+    left: 50%;
+    top: 75%;
+  }
 
 /* Responsive styles for different screen sizes */
 @media screen and (max-width: 768px) {
-  #food {
+  #food1 {
     width: 100%;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); /* Center the image horizontally and vertically */
+    top: 25%;
+  }
+  #food2 {
+    width: 100%;
+    left: 50%;
+    top: 75%;
   }
 }
 
