@@ -23,6 +23,10 @@ body, html {
   margin: 0 auto; /* Center images horizontally */
 }
 
+.recipe {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10%;
+}
 
 #food1 {
     width: 100%;
@@ -48,6 +52,8 @@ body, html {
     top: 75%;
   }
 }
+
+
 
 
 
